@@ -17,7 +17,7 @@ public class RateLimit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(name="rate_limit_key", nullable = false, unique = true)
     private String key;  // E.g., API key or User ID
 
     @Column(nullable = false)
